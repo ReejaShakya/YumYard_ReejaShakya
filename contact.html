@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Yum Yard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><span>Yum</span>Yard</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2>Contact & Reservations</h2>
+        <p>Want to book a table or order for pickup? Drop us a message below.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-control">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <small class="error-msg" id="nameError"></small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="username@example.com">
+                <small class="error-msg" id="emailError"></small>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="98XXXXXXXX">
+                <small class="error-msg" id="phoneError"></small>
+            </div>
+
+            <div class="form-control">
+                <label for="message">Your Message / Special Requests</label>
+                <textarea id="message" rows="5" placeholder="Tell us your requirements..."></textarea>
+                <small class="error-msg" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="successSummary" class="success-summary"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yum Yard Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
